@@ -22,7 +22,9 @@ Access your Rpi and enter the following command to get it's local IP:
 
 Write a Go Program with your preferable editor, then open terminal and enter
 
-> $ env GOARCH=arm64 GOOS=linux go build -o <output-name> <file-name>
+```sh
+$ env GOARCH=arm64 GOOS=linux go build -o <output-name> <file-name>
+```
 
 For eg on my sytem: `$ env GOARCH=arm64 GOOS=linux go build -o test main.go`
 
@@ -43,8 +45,10 @@ Enter the prompted password (asked for the first time)
 
 Now go to that location and run the 
 
-> $ cd <location-where-you-copied-your-file>
-> $ ./<file-name>
+```sh
+$ cd <location-where-you-copied-your-file>
+$ ./<file-name>
+```
 
 For eg on my system: `$ cd /home/ubuntu` and then run it with `$ ./test`
 
