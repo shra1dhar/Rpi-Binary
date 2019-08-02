@@ -19,7 +19,9 @@ Access your Rpi and enter the following command to get it's local IP:
 > $ ip addr
 
 **At Host end:**
+
 Write a Go Program with your preferable editor, then open terminal and enter
+
 > $ env GOARCH=arm64 GOOS=linux go build -o *<output-name>* *<file-name>*
 
 For eg on my sytem: `$ env GOARCH=arm64 GOOS=linux go build -o test main.go`
