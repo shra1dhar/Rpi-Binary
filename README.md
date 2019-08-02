@@ -1,3 +1,4 @@
+[!TIP]
 > This repository will be having a guide to run your binary code over Raspberry Pi.
 
 ### Requirement
@@ -16,15 +17,11 @@
 
 **At your Raspberry Pi end:**
 Access your Rpi and enter the following command to get it's local IP:
-```sh
-$ ip addr
-```
+> $ ip addr
 
 **At Host end:**
 Write a Go Program with your preferable editor, then open terminal and enter
-```sh
-$ env GOARCH=arm64 GOOS=linux go build -o <output-name> <file-name>
-```
+> $ env GOARCH=arm64 GOOS=linux go build -o <output-name> <file-name>
 
 For eg on my sytem: `$ env GOARCH=arm64 GOOS=linux go build -o test main.go`
 
@@ -32,25 +29,19 @@ For eg on my sytem: `$ env GOARCH=arm64 GOOS=linux go build -o test main.go`
 
 Next let's transfer this generated binary over to your Rpi and run it there. We will use secure copy protocol for this.
 
-```sh
-$ scp <location-of-binary-file> <Rpi's user-name>@<Rp's IP address>:<location-of-file-transfer on Rpi>
-```
+> $ scp <location-of-binary-file> <Rpi's user-name>@<Rp's IP address>:<location-of-file-transfer on Rpi>
 
 For eg on my system: `$ scp ~/Desktop/go-rpi/test ubuntu@192.168.x.x:/home/ubuntu`
 
 So the file **test** got transferred to here */home/ubuntu*
 You can ssh from your host machine also and run that file like the following:
 
-```sh
-$ ssh <Rpi's user-name>@<Rp's IP address>
-```
+> $ ssh <Rpi's user-name>@<Rp's IP address>
 Enter the prompted password (if you are connecting for the first time)
 
 Now go to that location and run the 
-```sh
-$ cd <location-where-you-copied your file>
-$ ./<file-name>
-```
+> $ cd <location-where-you-copied your file>
+> $ ./<file-name>
 
 For eg on my system: `$ cd /home/ubuntu` and then run it with `$ ./test`
 
