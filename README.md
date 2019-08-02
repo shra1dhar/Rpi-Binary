@@ -42,9 +42,12 @@ You can ssh from your host machine also and run that file like the following:
 Enter the prompted password (asked for the first time)
 
 Now go to that location and run the 
-> $ cd *<location-where-you-copied-your-file>*
+
+> $ cd <location-where-you-copied-your-file>
 > $ ./<file-name>
 
 For eg on my system: `$ cd /home/ubuntu` and then run it with `$ ./test`
 
 # AND BAMM !!!
+
+
