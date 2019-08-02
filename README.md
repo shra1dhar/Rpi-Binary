@@ -2,7 +2,7 @@
 
 ### Requirement
   - A configured Raspberry Pi 
-  - Another Sytem (preferably Unix based <3>)
+  - Another Sytem (preferably Unix based <3)
   - Patience and preferably some coffee too
 
 ### Quick Steps:
@@ -46,3 +46,5 @@ Now go to that location and run the
 > $ ./<file-name>
 
 For eg on my system: `$ cd /home/ubuntu` and then run it with `$ ./test`
+
+# AND BAMM !!!
