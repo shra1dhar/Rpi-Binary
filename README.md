@@ -50,7 +50,7 @@ $ cd <location-where-you-copied-your-file>
 $ ./<file-name>
 ```
 
-For eg on my system: `$ cd /home/ubuntu` and then run it with `$ ./test`
+For eg on my system: `$ cd /home/ubuntu` and then run it with `$ ./test `
 
 # AND BAMM !!!
 
