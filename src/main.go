@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello RPi")
+	fmt.Println("Hello RPi, whats up?")
 }
